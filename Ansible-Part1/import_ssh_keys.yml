@@ -1,4 +1,4 @@
-- hosts: leaf1-DC1
+- hosts: all
   gather_facts: no 
   tasks: 
   - name: Accept SSH key for each host 

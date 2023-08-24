@@ -1,11 +1,11 @@
 ---
-  - hosts: leaf1-DC1
+  - hosts: all
     gather_facts: no
     tasks:
     - name: Add User
       eos_user:
         name: automator
-        nopassword: yes
+        nopassword: yes 
         privilege: 15
         role: network-admin
         state: present
